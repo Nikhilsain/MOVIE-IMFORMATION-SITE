@@ -1,0 +1,55 @@
+.divi
+{
+font-family: 'Oswald', sans-serif;
+text-shadow:rgba(234,12,22,0.5);
+color: #91ff00;
+margin-top: 5%;
+text-align: center;
+/*font-size:4em;*/
+
+}
+#info
+{
+    background-color: thistle;
+}
+#table
+{
+    background-color: thistle;
+}
+.row
+{
+    background-color: thistle;
+    width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding-bottom: 30px;
+}
+
+.divi h1
+{
+    text-shadow: 0px 4px 3px red;
+}
+
+body
+{
+background-image: url(https://articles-images.sftcdn.net/wp-content/uploads/sites/3/2016/03/bigstock-Retro-film-production-accessor-117583943.jpg) ; 
+/* background:brown; */
+width: 100vw;
+height: 100vh; 
+background-size: 100% 100%;
+background-repeat: no-repeat;
+position: relative;
+margin: 0px;
+}
+
+#poster
+{
+    width: 100%;
+    display: block;
+    border-image: 2px solid black;
+    margin: auto;
+    
+}

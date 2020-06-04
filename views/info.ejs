@@ -1,0 +1,51 @@
+  <%- include('partials/header.ejs') %>
+
+
+ <div id="info">   
+   
+        <div>
+          <h1>
+            <p style="text-align: center;background-color: bisque;"><%=data.title%></p>
+          </h1> 
+        </div>
+  <div class="row">      
+   
+    
+  <div class="col-xs-12 col-sm-4" style="text-align: center;">
+    <ul>
+      <li>movie-length - <%=data.length%> </li>
+      <li>release year - <%=data.year%> </li>
+      <li>Rating - <%=data.rating%> </li>
+    </ul>
+ 
+    <h4><a href="<%=data.trailer.link%>">Trailer link</a></h4>
+  </div>
+  <div class="col-xs-12 col-sm-4"> 
+     
+    <img src="<%=data.poster %>" id="poster"  class="img-responsive">
+     
+  </div>
+  <div class="col-xs-12 col-sm-4 jumbotron">
+    <h3>
+     <p class="text-success">
+       <em><%=data.plot%></em>
+     </p>
+   </h3>
+  </div> 
+ </div> 
+</div>  
+    <table class="table table-hover" class="table-responsive" id="table">
+       <tr>
+         <th>Cast</th>
+         <th>Character Role</th>
+        </tr>
+      <%data.cast.forEach(function(cast){%>
+        <tr>
+           <td> <%=cast.actor%> </td>
+           <td><%=cast.character%></td>
+        </tr>  
+      <%});%>
+     </table>
+    
+ 
+    <%- include('partials/footer.ejs') %>
